@@ -3,10 +3,11 @@
 ## Problem
 * In Anwendungen für mehrere Personengruppen gibt es Oberflächenelemente, welche nicht von jeder Person benötigt werden.
 * Nicht Jede Person darf auf alle Oberflächenelemente zugreifen (zum Beispiel Oberflächenelemente für Administratoren).
+* Ein Wechsel von Berechtigungen muss dynamisch ohne Neustart möglich sein.
 ## Research questions
-* Welche Methoden zum aus und einblenden von Oberflächenelementen gibt es?
+* Welche Methoden zum dynamischen aus und einblenden von Oberflächenelementen gibt es?
 ## Idea
-* Entwurf von Authority Mechanismen.
+* Entwurf von dynamischen Authority Mechanismen.
 * Vergleich der Authority Mechanismen im Kontext der bestehenden Lösungen.
 ## Contribution
 * Einen Überblick schaffen über verschiedene Möglichkeiten einen Authority Mechanismus umzusetzen.
