@@ -1,20 +1,29 @@
 # PrICoBE
 
 ## Problem
-* In Anwendungen für mehrere Personengruppen gibt es Oberflächenelemente, welche nicht von jeder Person benötigt werden.
-* Nicht Jede Person darf auf alle Oberflächenelemente zugreifen (zum Beispiel Oberflächenelemente für Administratoren).
-* Ein Wechsel von Berechtigungen muss dynamisch ohne Neustart möglich sein.
+* In Softwareanwendungen, die von mehreren Personengruppen verwendet werden, wird die Softwareanwendungen, durch die von der aktuellen Personengruppe nicht benötigten Oberflächenelemente, unübersichtlich.
+  * Manchmal benötigt eine Person Zugriff auf ein Oberflächenelement, das für seine aktuelle Personengruppe gesperrt ist.
+  * Es gibt Oberflächenelemente, die aus Sicherheitsgründen nicht jeder Person angezeigt werden dürfen.
+* Wenn kein keine dynamischen Änderungen an den Berechtigungen durchgeführt werden können, muss bei einem Benutzerwechsel die Softwareanwendung neu gestartet werden. Dies entspricht nicht dem gewünschten industriellen Arbeitsablauf.
+* Bisherige Lösungen sind nicht direkt für Eclipse 4 vorgesehen.
 ## Research questions
-* Welche Methoden zum dynamischen aus und einblenden von Oberflächenelementen gibt es?
+* Welche Ansätze zur dynamischen Rekonfiguration von Benutzeroberflächen gibt es.
+* Wie kann die Benutzeroberfläche von Eclipse 4 Anwendungen dynamisch rekonfiguriert werden.
+  * Wie aufwendig ist das Implementieren eines Authority Mechanismus in einer bestehende Eclipse 4 Anwendung.
 ## Idea
-* Entwurf von dynamischen Authority Mechanismen.
-* Vergleich der Authority Mechanismen im Kontext der bestehenden Lösungen.
+* Enwicklung eines Ansatzes für die dynamische Rekonfiguration der Benutzeroberfläche von Eclipse 4.
+  * Untersuchung verschiedener Ansätze
 ## Contribution
-* Einen Überblick schaffen über verschiedene Möglichkeiten einen Authority Mechanismus umzusetzen.
-* Ansätze für Authority Mechanismen.
+* Überblick und Vergleich über bestehende Methoden zur Rekonfiguration von Benutzeroberflächen.
+* Neuer spezifischer Ansatz für Eclipse 4
+  * Eigenschaften
 ## Benefits
+* Ein Authority Mechanismus für Eclipse 4 mit Eclipse 3 Komponenten.
+* Der Authority Mechanismus reagiert dynamisch auf Veränderungen an Berechtigungen.
 * Das Auswählen und Implementieren eines Authority Mechanismus ist vereinfacht.
 ## Evaluation
-* Implementierung von zwei Ansätzen in einer Eclipse 4 RCP Anwendung mit Eclipse 3 Komponenten in der Anwendung PREEvision.
-* Die Implementierung auf die Anforderungen testen.
-* Die Implementierung auf die im GQM Plan festgelegen Metriken testen.
+* Implementierung der Ansätze in PREEvision. (einer Eclipse 4 Anwendung mit Eclipse 3 Komponenten von der Vector Informatik GmbH)
+* Die Implementierung auf die funktionalen und nichtfunktionalen Anforderungen testen.
+* Die Implementierung auf folgende Metriken testen.
+  * Performance
+  * Aufwand einer Implementierung
